@@ -332,6 +332,27 @@ li {
   line-height: 14px;
   letter-spacing: 0%;
   color: var(--uzum-gray-text);
+  transition: width 0.3s;
+  position: relative;
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: width 0.3s;
+  bottom: -2px;
+  background-color: var(--uzum-bl-text);
+  height: 2px;
+  width: 0%;
+}
+
+.faq:hover::after {
+  width: 100%;
+}
+
+.faq:hover {
+  color: var(--uzum-bl-text);
 }
 
 .orders {
@@ -342,6 +363,28 @@ li {
   color: var(--uzum-gray-text);
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: width 0.3s;
+  position: relative;
+}
+
+.orders::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: width 0.3s;
+  bottom: -2px;
+  background-color: var(--uzum-bl-text);
+  height: 1px;
+  width: 0%;
+}
+
+.orders:hover::after {
+  width: 100%;
+}
+
+.orders:hover {
+  color: var(--uzum-bl-text);
 }
 
 #langue {
@@ -499,7 +542,7 @@ li {
   left: 0;
   bottom: -3px;
   background-color: #1f2026;
-  transition: width 0.3s;
+  transition: width 0.5s;
   height: 2px;
 }
 
@@ -700,6 +743,10 @@ li {
   border-radius: 8px;
 }
 
+.comment {
+  margin-left: 5px;
+}
+
 #heart-chek:checked ~ .heart-img {
   fill: red;
 }
@@ -707,6 +754,8 @@ li {
 .chegirma-slot {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .bolib-tolash {
@@ -796,6 +845,46 @@ li {
   margin-top: 21px;
 }
 
+/* CTA */
+.cta-section-img {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* Hot Section */
+.next {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  opacity: 50%;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid rgba(54, 54, 64, 0.251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: absolute;
+  top: 140px;
+  right: 15px;
+}
+
+.next:hover {
+  opacity: 100%;
+  border-color: rgb(15, 14, 14);
+}
+
+.next:active {
+  opacity: 50%;
+}
+
+/* Rosehip */
+.rosehip-section{
+  padding-top: 21px;
+}
+
+
 @media (max-width: 1240px) {
   .part {
     width: 100%;
@@ -804,6 +893,11 @@ li {
 
   .title {
     text-align: center;
+  }
+
+  .cta-section-img {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -892,5 +986,10 @@ li {
   .card {
     align-items: center;
     text-align: center;
+  }
+
+  .cta-section-img {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
