@@ -272,6 +272,10 @@ li {
   box-sizing: border-box;
 }
 
+.title {
+  margin-top: 50px;
+}
+
 /* Header */
 
 .header {
@@ -594,6 +598,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 5px;
 }
 
 .part {
@@ -683,6 +688,7 @@ li {
   line-height: 21px;
 }
 
+/* aksiyalar end */
 .oil {
   font-size: 12.8px;
   line-height: 15.36px;
@@ -724,8 +730,8 @@ li {
 .heart-img {
   fill: #fff;
   position: absolute;
-  left: 200px;
-  top: 10px;
+  left: 205px;
+  top: 15px;
   cursor: pointer;
 }
 
@@ -880,10 +886,21 @@ li {
 }
 
 /* Rosehip */
-.rosehip-section{
+.rosehip-section {
   padding-top: 21px;
 }
 
+/* Famous Section */
+.pl {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-famous{
+  margin-top: 5px;
+}
 
 @media (max-width: 1240px) {
   .part {
