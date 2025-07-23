@@ -622,8 +622,8 @@ li {
 
 .eksklyuziv {
   position: absolute;
-  top: 288px;
-  left: -8px;
+  top: 292px;
+  left: 0px;
   width: 73px;
   height: 21px;
   font-family: "Roboto";
@@ -648,7 +648,8 @@ li {
   line-height: 21px;
   letter-spacing: 0%;
   position: absolute;
-  left: 0;
+  left: 5px;
+  top: 292px;
   background-color: #3b007d;
   padding-left: 7px;
   padding-top: 1px;
@@ -665,10 +666,11 @@ li {
   color: white;
   position: absolute;
   border-radius: 4px;
-  bottom: 148px;
+  bottom: 142px;
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 5px;
 }
 
 .pepsi_action {
@@ -684,7 +686,7 @@ li {
   color: white;
   font-weight: 500;
   font-size: 13px;
-  bottom: 148px;
+  bottom: 142px;
   line-height: 21px;
 }
 
@@ -754,6 +756,10 @@ li {
 }
 
 #heart-chek:checked ~ .heart-img {
+  fill: red;
+}
+
+#heart-chek:checked ~ .heart-img path {
   fill: red;
 }
 
@@ -898,7 +904,7 @@ li {
   justify-content: space-between;
 }
 
-.card-famous{
+.card-famous {
   margin-top: 5px;
 }
 
@@ -972,10 +978,16 @@ li {
     display: none;
   }
 
+  .header-top-left{
+    flex-direction: row;
+    gap: 5px;
+  }
+
   .header-top-right {
     position: relative;
     top: 20px;
     align-items: center;
+    flex-direction: row;
   }
   /* Header Bottom */
   .header-bottom {
@@ -992,6 +1004,10 @@ li {
 }
 
 @media (max-width: 601px) {
+  .hero {
+    padding-top: 0;
+  }
+
   .bottom-t {
     flex-direction: column;
     gap: 10px;
@@ -1008,5 +1024,22 @@ li {
   .cta-section-img {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  .pl {
+    justify-content: center;
+  }
+
+  .pepsi_action {
+    top: 292px;
+    left: 0;
+  }
+
+  .aksiya {
+    left: 0;
+  }
+
+  .di_sport {
+    left: 0;
   }
 }
