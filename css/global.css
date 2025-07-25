@@ -978,7 +978,7 @@ li {
     display: none;
   }
 
-  .header-top-left{
+  .header-top-left {
     flex-direction: row;
     gap: 5px;
   }
